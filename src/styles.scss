@@ -1,4 +1,326 @@
-/* You can add global styles to this file, and also import other style files */
+/* Standardfarbe (Light Theme) */
+:root {
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(95% 0 0);
+    --color-base-300: oklch(95% 0 0);
+    --color-base-content: oklch(20% 0 0);
+    --color-primary: #F4CFC7;
+    --color-primary-content: #5D4A47;
+    --color-secondary: #FFC98B;
+    --color-secondary-content: #6B3D14;
+    --color-accent: #FFBE98;
+    --color-accent-content: #5A2D19;
+    --color-neutral: #D8CFC4;
+    --color-neutral-content: #3C3C3C;
+    --color-info: #D4C2CD;
+    --color-info-content: #56394B;
+    --color-success: #C6C09C;
+    --color-success-content: #3C3F2F;
+    --color-warning: #FFD59A;
+    --color-warning-content: #5C341B;
+    --color-error: #E79796;
+    --color-error-content: #5A2322;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+    --color-base-100: oklch(20% 0 0);
+    --color-base-200: oklch(15% 0 0);
+    --color-base-300: oklch(10% 0 0);
+    --color-base-content: oklch(90% 0 0);
+    --color-primary: #B27B72;
+    --color-primary-content: #2A1E1D;
+    --color-secondary: #A96B3D;
+    --color-secondary-content: #FFC98B;
+    --color-accent: #B87550;
+    --color-accent-content: #FFBE98;
+    --color-neutral: #3C3C3C;
+    --color-neutral-content: #D8CFC4;
+    --color-info: #56394B;
+    --color-info-content: #D4C2CD;
+    --color-success: #3C3F2F;
+    --color-success-content: #C6C09C;
+    --color-warning: #5C341B;
+    --color-warning-content: #FFD59A;
+    --color-error: #5A2322;
+    --color-error-content: #E79796;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* mechu Light Mode */
+[data-theme='mechuLight'] {
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(95% 0 0);
+    --color-base-300: oklch(95% 0 0);
+    --color-base-content: oklch(20% 0 0);
+    --color-primary: #F4CFC7;
+    --color-primary-content: #5D4A47;
+    --color-secondary: #FFC98B;
+    --color-secondary-content: #6B3D14;
+    --color-accent: #FFBE98;
+    --color-accent-content: #5A2D19;
+    --color-neutral: #D8CFC4;
+    --color-neutral-content: #3C3C3C;
+    --color-info: #D4C2CD;
+    --color-info-content: #56394B;
+    --color-success: #C6C09C;
+    --color-success-content: #3C3F2F;
+    --color-warning: #FFD59A;
+    --color-warning-content: #5C341B;
+    --color-error: #E79796;
+    --color-error-content: #5A2322;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* mechu Dark Mode */
+[data-theme='mechuNight'] {
+    --color-base-100: oklch(10% 0 0);
+    --color-base-200: oklch(8% 0 0);
+    --color-base-300: oklch(5% 0 0);
+    --color-base-content: oklch(85% 0 0);
+    --color-primary: #D89D89;
+    --color-primary-content: #2C1C1B;
+    --color-secondary: #8E4F28;
+    --color-secondary-content: #F4A77D;
+    --color-accent: #D09C6F;
+    --color-accent-content: #FFBE98;
+    --color-neutral: #262626;
+    --color-neutral-content: #D8CFC4;
+    --color-info: #56394B;
+    --color-info-content: #D4C2CD;
+    --color-success: #3C3F2F;
+    --color-success-content: #C6C09C;
+    --color-warning: #5C341B;
+    --color-warning-content: #FFD59A;
+    --color-error: #5A2322;
+    --color-error-content: #E79796;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* mechu Dark Mode */
+[data-theme='mechuNight2'] {
+    --color-base-100: oklch(20% 0 0);
+    --color-base-200: oklch(15% 0 0);
+    --color-base-300: oklch(10% 0 0);
+    --color-base-content: oklch(90% 0 0);
+    --color-primary: #B27B72;
+    --color-primary-content: #2A1E1D;
+    --color-secondary: #A96B3D;
+    --color-secondary-content: #FFC98B;
+    --color-accent: #B87550;
+    --color-accent-content: #FFBE98;
+    --color-neutral: #3C3C3C;
+    --color-neutral-content: #D8CFC4;
+    --color-info: #56394B;
+    --color-info-content: #D4C2CD;
+    --color-success: #3C3F2F;
+    --color-success-content: #C6C09C;
+    --color-warning: #5C341B;
+    --color-warning-content: #FFD59A;
+    --color-error: #5A2322;
+    --color-error-content: #E79796;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+:root {
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(95% 0 0);
+    --color-base-300: oklch(95% 0 0);
+    --color-base-content: oklch(20% 0 0);
+    --color-primary: #F4CFC7;
+    --color-primary-content: #5D4A47;
+    --color-secondary: #FFC98B;
+    --color-secondary-content: #6B3D14;
+    --color-accent: #FFBE98;
+    --color-accent-content: #5A2D19;
+    --color-neutral: #D8CFC4;
+    --color-neutral-content: #3C3C3C;
+    --color-info: #D4C2CD;
+    --color-info-content: #56394B;
+    --color-success: #C6C09C;
+    --color-success-content: #3C3F2F;
+    --color-warning: #FFD59A;
+    --color-warning-content: #5C341B;
+    --color-error: #E79796;
+    --color-error-content: #5A2322;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Morgen Theme */
+[data-theme='morning'] {
+    --color-scheme: "morning";
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(90% 0 0);
+    --color-base-300: oklch(80% 0 0);
+    --color-base-content: oklch(25% 0 0);
+    --color-primary: #F9E1D9;
+    --color-primary-content: #5D4A47;
+    --color-secondary: #F1E2D3;
+    --color-secondary-content: #7D4A14;
+    --color-accent: #FFCB7D;
+    --color-accent-content: #6B3D14;
+    --color-neutral: #D8CFC4;
+    --color-neutral-content: #3C3C3C;
+    --color-info: #D9C2D0;
+    --color-info-content: #56394B;
+    --color-success: #D1E0D2;
+    --color-success-content: #3C3F2F;
+    --color-warning: #FFEC90;
+    --color-warning-content: #6C4D2D;
+    --color-error: #F2B7B2;
+    --color-error-content: #A04C4C;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Mittag Theme */
+[data-theme='midday'] {
+    --color-scheme: "midday";
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(85% 0 0);
+    --color-base-300: oklch(70% 0 0);
+    --color-base-content: oklch(15% 0 0);
+    --color-primary: #F7B7A3;
+    --color-primary-content: #5D4A47;
+    --color-secondary: #FFD26B;
+    --color-secondary-content: #8B3D14;
+    --color-accent: #FF8C44;
+    --color-accent-content: #5A2D19;
+    --color-neutral: #E4D8C3;
+    --color-neutral-content: #3C3C3C;
+    --color-info: #FFB3A6;
+    --color-info-content: #56394B;
+    --color-success: #D0E5A3;
+    --color-success-content: #3C3F2F;
+    --color-warning: #FFD59A;
+    --color-warning-content: #5C341B;
+    --color-error: #E79896;
+    --color-error-content: #5A2322;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Abend Theme */
+[data-theme='evening'] {
+    --color-scheme: "evening";
+    --color-base-100: oklch(80% 0 0);
+    --color-base-200: oklch(70% 0 0);
+    --color-base-300: oklch(60% 0 0);
+    --color-base-content: oklch(40% 0 0);
+    --color-primary: #D18F76;
+    --color-primary-content: #5D4A47;
+    --color-secondary: #FF3B56;
+    --color-secondary-content: #3C3C3C;
+    --color-accent: #FF5A46;
+    --color-accent-content: #FF9E80;
+    --color-neutral: #B39B6A;
+    --color-neutral-content: #D8CFC4;
+    --color-info: #FAD9D9;
+    --color-info-content: #56394B;
+    --color-success: #C5E6B9;
+    --color-success-content: #3C3F2F;
+    --color-warning: #FFD59A;
+    --color-warning-content: #5C341B;
+    --color-error: #E79796;
+    --color-error-content: #5A2322;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+/* Nacht Theme */
+[data-theme='night'] {
+    --color-scheme: "night";
+    --color-base-100: oklch(10% 0 0);
+    --color-base-200: oklch(5% 0 0);
+    --color-base-300: oklch(2% 0 0);
+    --color-base-content: oklch(90% 0 0);
+    --color-primary: #2C3E50;
+    --color-primary-content: #ecf0f1;
+    --color-secondary: #34495E;
+    --color-secondary-content: #7f8c8d;
+    --color-accent: #1abc9c;
+    --color-accent-content: #ffffff;
+    --color-neutral: #2D3A3F;
+    --color-neutral-content: #e5e5e5;
+    --color-info: #7f8c8d;
+    --color-info-content: #ecf0f1;
+    --color-success: #1e7a4e;
+    --color-success-content: #ecf0f1;
+    --color-warning: #e67e22;
+    --color-warning-content: #ecf0f1;
+    --color-error: #e74c3c;
+    --color-error-content: #ecf0f1;
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 0.5rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
