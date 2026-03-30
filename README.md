@@ -1,27 +1,31 @@
-# Website
+# Mechu's Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+A personal website built with Angular 18, Tailwind CSS, and DaisyUI — featuring fully custom themes that automatically switch based on the time of day.
 
-## Development server
+**Live:** https://chircle.github.io/website/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Time-based theming** — the UI adapts its color scheme depending on whether it's morning, noon, evening, or night
+- **Custom DaisyUI themes** — hand-crafted palettes (`tag`, `nacht`, `scuro`, `morning`, `noon`, `evening`, `night`) with warm, soft colors
+- **Manual theme switching** — buttons to override the active theme at any time
+- **Magic word easter egg** — unlock extra controls by typing the right word
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack
 
-## Build
+- [Angular 18](https://angular.dev) (standalone components)
+- [Tailwind CSS](https://tailwindcss.com)
+- [DaisyUI 5](https://daisyui.com)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Development
 
-## Running unit tests
+```bash
+npm install
+npm start        # dev server at http://localhost:4200
+npm run build    # production build
+npm test         # unit tests
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Deployment
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Pushes to `main` are automatically deployed to GitHub Pages via GitHub Actions.

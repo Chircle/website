@@ -11,57 +11,32 @@
   <div class="alert alert-error">Fehler: Etwas ist schiefgelaufen!</div>
 
   <button (click)="setThemeDependingOnTime()" class="btn btn-primary">Reset</button>
+  <button (click)="setTheme('scuro')" class="btn btn-neutral">scuro Mode aktivieren</button>
+  <button (click)="setTheme('nacht')" class="btn btn-neutral">Mechu Night Mode aktivieren</button>
+  <button (click)="setTheme('tag')" class="btn btn-neutral">Mechu Day Mode aktivieren</button>
+  <button (click)="setTheme('dark')" class="btn btn-neutral">Dark Mode aktivieren</button>
+  <button (click)="setTheme('light')" class="btn btn-neutral">Light Mode aktivieren</button>
 
-  <button onclick="document.documentElement.setAttribute('data-theme', 'scuro')" class="btn btn-neutral">
-    scuro Mode aktivieren
-  </button>
+  <div class="mt-4 space-y-2">
+    <label for="magicWord">Gib 'hallo' ein:</label>
+    <input #magicInput type="text" id="magicWord" class="input" placeholder="Gib 'hallo' ein"
+      (input)="checkInput(magicInput.value)" />
+  </div>
 
-  <!-- <button onclick="document.documentElement.setAttribute('data-theme', 'nacht')" class="btn btn-neutral"> -->
-  <button (click)="setMechuThemeDark()" class="btn btn-neutral">
-    Mechu Night Mode aktivieren
-  </button>
-
-  <button onclick="document.documentElement.setAttribute('data-theme', 'tag')" class="btn btn-neutral">
-    Mechu Day Mode aktivieren
-  </button>
-  <button onclick="document.documentElement.setAttribute('data-theme', 'dark')" class="btn btn-neutral">
-    Dark Mode aktivieren
-  </button>
-
-  <button onclick="document.documentElement.setAttribute('data-theme', 'light')" class="btn btn-neutral">
-    Light Mode aktivieren
-  </button>
-  <br><br>
-  <label for="magicWord">Gib 'hallo' ein:</label><br>
-  <input type="text" id="magicWord" class="input" placeholder="Gib 'hallo' ein" />
-
-  <!-- Anzeige basierend auf der Übereinstimmung des Inputs -->
   @if(inputMatch) {
-  <p>Du hast 'hallo' eingegeben!</p>
+    <p>Du hast 'hallo' eingegeben!</p>
   }
 
-  @if(!inputMatch && magicSubmission.get('magicWord')?.value) {
-  <p>Input stimmt nicht überein.</p>
+  @if(!inputMatch && magicWord) {
+    <p>Input stimmt nicht überein.</p>
   }
 
   @if(inputMatch) {
-  <button onclick="document.documentElement.setAttribute('data-theme', 'morning')" class="btn btn-neutral">
-    morning 🌅
-  </button>
-
-  <button onclick="document.documentElement.setAttribute('data-theme', 'noon')" class="btn btn-neutral">
-    noon 🌞
-  </button>
-
-  <button onclick="document.documentElement.setAttribute('data-theme', 'evening')" class="btn btn-neutral">
-    evening 🌇
-  </button>
-
-  <button onclick="document.documentElement.setAttribute('data-theme', 'night')" class="btn btn-neutral">
-    night 🌙
-  </button>
+    <button (click)="setTheme('morning')" class="btn btn-neutral">morning 🌅</button>
+    <button (click)="setTheme('noon')" class="btn btn-neutral">noon 🌞</button>
+    <button (click)="setTheme('evening')" class="btn btn-neutral">evening 🌇</button>
+    <button (click)="setTheme('night')" class="btn btn-neutral">night 🌙</button>
   }
 
-  {{inputMatch}}
-  <img src="../assets/img/favicon-removebg-preview.png" />
+  <img src="assets/img/favicon-removebg-preview.png" />
 </div>
