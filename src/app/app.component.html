@@ -12,15 +12,16 @@
 
   <button (click)="setThemeDependingOnTime()" class="btn btn-primary">Reset</button>
 
-  <button onclick="document.documentElement.setAttribute('data-theme', 'mechuNight2')" class="btn btn-neutral">
-    Mechu Night 2 Mode aktivieren
+  <button onclick="document.documentElement.setAttribute('data-theme', 'scuro')" class="btn btn-neutral">
+    scuro Mode aktivieren
   </button>
 
-  <button onclick="document.documentElement.setAttribute('data-theme', 'mechuNight')" class="btn btn-neutral">
+  <!-- <button onclick="document.documentElement.setAttribute('data-theme', 'nacht')" class="btn btn-neutral"> -->
+  <button (click)="setMechuThemeDark()" class="btn btn-neutral">
     Mechu Night Mode aktivieren
   </button>
 
-  <button onclick="document.documentElement.setAttribute('data-theme', 'mechuLight')" class="btn btn-neutral">
+  <button onclick="document.documentElement.setAttribute('data-theme', 'tag')" class="btn btn-neutral">
     Mechu Day Mode aktivieren
   </button>
   <button onclick="document.documentElement.setAttribute('data-theme', 'dark')" class="btn btn-neutral">

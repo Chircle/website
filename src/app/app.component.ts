@@ -64,6 +64,10 @@ export class AppComponent {
     return document.documentElement.setAttribute('data-theme', this.checkTime())
   }
 
+  setMechuThemeDark() {
+    return document.documentElement.setAttribute('data-theme', 'nacht')
+  }
+
 }
 
 

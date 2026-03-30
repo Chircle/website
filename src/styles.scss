@@ -1,69 +1,69 @@
 /* Standardfarbe (Light Theme) */
-:root {
-    --color-base-100: oklch(100% 0 0);
-    --color-base-200: oklch(95% 0 0);
-    --color-base-300: oklch(95% 0 0);
-    --color-base-content: oklch(20% 0 0);
-    --color-primary: #F4CFC7;
-    --color-primary-content: #5D4A47;
-    --color-secondary: #FFC98B;
-    --color-secondary-content: #6B3D14;
-    --color-accent: #FFBE98;
-    --color-accent-content: #5A2D19;
-    --color-neutral: #D8CFC4;
-    --color-neutral-content: #3C3C3C;
-    --color-info: #D4C2CD;
-    --color-info-content: #56394B;
-    --color-success: #C6C09C;
-    --color-success-content: #3C3F2F;
-    --color-warning: #FFD59A;
-    --color-warning-content: #5C341B;
-    --color-error: #E79796;
-    --color-error-content: #5A2322;
-    --radius-selector: 2rem;
-    --radius-field: 1rem;
-    --radius-box: 0.5rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1px;
-    --depth: 0;
-    --noise: 0;
-}
+// :root {
+//     --color-base-100: oklch(100% 0 0);
+//     --color-base-200: oklch(95% 0 0);
+//     --color-base-300: oklch(95% 0 0);
+//     --color-base-content: oklch(20% 0 0);
+//     --color-primary: #F4CFC7;
+//     --color-primary-content: #5D4A47;
+//     --color-secondary: #FFC98B;
+//     --color-secondary-content: #6B3D14;
+//     --color-accent: #FFBE98;
+//     --color-accent-content: #5A2D19;
+//     --color-neutral: #D8CFC4;
+//     --color-neutral-content: #3C3C3C;
+//     --color-info: #D4C2CD;
+//     --color-info-content: #56394B;
+//     --color-success: #C6C09C;
+//     --color-success-content: #3C3F2F;
+//     --color-warning: #FFD59A;
+//     --color-warning-content: #5C341B;
+//     --color-error: #E79796;
+//     --color-error-content: #5A2322;
+//     --radius-selector: 2rem;
+//     --radius-field: 1rem;
+//     --radius-box: 0.5rem;
+//     --size-selector: 0.25rem;
+//     --size-field: 0.25rem;
+//     --border: 1px;
+//     --depth: 0;
+//     --noise: 0;
+// }
 
 /* Dark Mode */
-[data-theme='dark'] {
-    --color-base-100: oklch(20% 0 0);
-    --color-base-200: oklch(15% 0 0);
-    --color-base-300: oklch(10% 0 0);
-    --color-base-content: oklch(90% 0 0);
-    --color-primary: #B27B72;
-    --color-primary-content: #2A1E1D;
-    --color-secondary: #A96B3D;
-    --color-secondary-content: #FFC98B;
-    --color-accent: #B87550;
-    --color-accent-content: #FFBE98;
-    --color-neutral: #3C3C3C;
-    --color-neutral-content: #D8CFC4;
-    --color-info: #56394B;
-    --color-info-content: #D4C2CD;
-    --color-success: #3C3F2F;
-    --color-success-content: #C6C09C;
-    --color-warning: #5C341B;
-    --color-warning-content: #FFD59A;
-    --color-error: #5A2322;
-    --color-error-content: #E79796;
-    --radius-selector: 2rem;
-    --radius-field: 1rem;
-    --radius-box: 0.5rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1px;
-    --depth: 0;
-    --noise: 0;
-}
+// [data-theme='dark'] {
+//     --color-base-100: oklch(20% 0 0);
+//     --color-base-200: oklch(15% 0 0);
+//     --color-base-300: oklch(10% 0 0);
+//     --color-base-content: oklch(90% 0 0);
+//     --color-primary: #B27B72;
+//     --color-primary-content: #2A1E1D;
+//     --color-secondary: #A96B3D;
+//     --color-secondary-content: #FFC98B;
+//     --color-accent: #B87550;
+//     --color-accent-content: #FFBE98;
+//     --color-neutral: #3C3C3C;
+//     --color-neutral-content: #D8CFC4;
+//     --color-info: #56394B;
+//     --color-info-content: #D4C2CD;
+//     --color-success: #3C3F2F;
+//     --color-success-content: #C6C09C;
+//     --color-warning: #5C341B;
+//     --color-warning-content: #FFD59A;
+//     --color-error: #5A2322;
+//     --color-error-content: #E79796;
+//     --radius-selector: 2rem;
+//     --radius-field: 1rem;
+//     --radius-box: 0.5rem;
+//     --size-selector: 0.25rem;
+//     --size-field: 0.25rem;
+//     --border: 1px;
+//     --depth: 0;
+//     --noise: 0;
+// }
 
 /* mechu Light Mode */
-[data-theme='mechuLight'] {
+[data-theme='tag'] {
     --color-base-100: oklch(100% 0 0);
     --color-base-200: oklch(95% 0 0);
     --color-base-300: oklch(95% 0 0);
@@ -94,8 +94,8 @@
     --noise: 0;
 }
 
-/* mechu Dark Mode */
-[data-theme='mechuNight'] {
+/* scuro Mode */
+[data-theme='scuro'] {
     --color-base-100: oklch(10% 0 0);
     --color-base-200: oklch(8% 0 0);
     --color-base-300: oklch(5% 0 0);
@@ -127,7 +127,7 @@
 }
 
 /* mechu Dark Mode */
-[data-theme='mechuNight2'] {
+[data-theme='nacht'] {
     --color-base-100: oklch(20% 0 0);
     --color-base-200: oklch(15% 0 0);
     --color-base-300: oklch(10% 0 0);

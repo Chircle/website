@@ -12,8 +12,8 @@ export default {
   daisyui: {
     themes: [
       {
-        mechuLight: {
-          "color-scheme": "mechuLight",
+        tag: {
+          "color-scheme": "tag",
           "base-100": "oklch(100% 0 0)",
           "base-200": "oklch(95% 0 0)",
           "base-300": "oklch(95% 0 0)",
@@ -43,8 +43,8 @@ export default {
           depth: "0",
           noise: "0",
         },
-        mechuNight: {
-          "color-scheme": "mechuNight",
+        nacht: {
+          "color-scheme": "nacht",
           "base-100": "oklch(10% 0 0)",
           "base-200": "oklch(8% 0 0)",
           "base-300": "oklch(5% 0 0)",
@@ -74,8 +74,8 @@ export default {
           depth: "0",
           noise: "0",
         },
-        mechuNight2: {
-          "color-scheme": "mechuNight2",
+        scuro: {
+          "color-scheme": "scuro",
           "base-100": "oklch(100% 0 0)",
           "base-200": "oklch(95% 0 0)",
           "base-300": "oklch(95% 0 0)",
